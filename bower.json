@@ -1,0 +1,8 @@
+{
+  "name": "editore-link-plugin",
+  "version": "1.0.0",
+  "main": "src/editore-link-plugin.js",
+  "ignore": [],
+  "dependencies": {},
+  "devDependencies": {}
+}
