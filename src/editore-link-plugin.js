@@ -15,7 +15,7 @@
     // set plugin elements/props
     self.button = document.createElement('button');
     self.button.innerText = 'Link';
-    self.name = 'LinkEditionPlugin';
+    self.name = 'linkEditionPlugin';
     self.tag = 'a';
 
     // set handlers
@@ -46,9 +46,11 @@
     };
 
     // create link form
-    self.removeButton = document.createElement('button');
-    self.removeButton.innerText = "Remove";
     self.input = document.createElement('input');
+    self.removeButton = document.createElement('button');
+    self.removeButton.className = 'linkEditionPlugin__removeButton';
+    self.removeButton.innerText = 'Remove';
+    self.input.className = 'linkEditionPlugin__input';
 
     // set listeners
     self.removeButton.addEventListener('click', self.removeHandler);
