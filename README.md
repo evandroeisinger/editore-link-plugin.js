@@ -16,7 +16,7 @@ LinkPlugin = window.EditoreLinkPlugin;
 LinkPlugin = require('editore-link-plugin');
 
 // then register!
-editor.registerEditionComponent(LinkPlugin);
+editor.registerEditionPlugin(LinkPlugin);
 ```
 ---
 #### support
