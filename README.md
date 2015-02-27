@@ -1,25 +1,23 @@
 # editore.js link plugin [![npm version](https://badge.fury.io/js/editore-link-plugin.svg)](http://badge.fury.io/js/editore-link-plugin)
 
+#### install
+Available on npm: `npm install editore-link-plugin` or [directly download](https://github.com/evandroeisinger/editore-link-plugin.js/raw/master/src/editore-link-plugin.js)
+
 #### basic usage
-It's easy to use! Load [editor.js](https://github.com/evandroeisinger/editore.js) into your application, instantiate it and register the new edition plugin.
+It's easy to use! Load [editor.js](https://github.com/evandroeisinger/editore.js) into your application, instantiate it and register the new **edition** plugin.
 
 ```javascript
-var editor = new Editor(document.getElementById('editor'));
+var editor = new Editor(document.getElementById('editor')),
+    LinkPlugin;
+
+// Global
+LinkPlugin = window.EditoreLinkPlugin;
+// CommonJS
+LinkPlugin = require('editore-link-plugin');
+
 // then register!
-editor.register('edition', window.EditoreLinkPlugin);
+editor.registerEditionComponent(LinkPlugin);
 ```
-
-#### install
-
-Script:
-```html
-<script src="editore-link-plugin.js"></script>
-```
-CommonJS:
-``` 
-npm install editore-link-plugin --save
-```
-
 ---
 #### support
 - chrome: ?
