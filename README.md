@@ -4,7 +4,7 @@
 Available on npm: `npm install editore-link-plugin` or [directly download](https://github.com/evandroeisinger/editore-link-plugin.js/raw/master/src/editore-link-plugin.js)
 
 #### basic usage
-It's easy to use! Load [editor.js](https://github.com/evandroeisinger/editore.js) into your application, instantiate it and register the new **edition** plugin.
+It's easy to use! Load [editore.js](https://github.com/evandroeisinger/editore.js) into your application, instantiate it and register the new **edition** plugin.
 
 ```javascript
 var editor = new Editor(document.getElementById('editor')),
