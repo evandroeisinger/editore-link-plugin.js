@@ -7,7 +7,7 @@ Available on npm: `npm install editore-link-plugin` or [directly download](https
 It's easy to use! Load [editore.js](https://github.com/evandroeisinger/editore.js) into your application, instantiate it and register the new **edition** plugin.
 
 ```javascript
-var editor = new Editor(document.getElementById('editor')),
+var editore = new Editore(document.getElementById('editor')),
     LinkPlugin;
 
 // Global
@@ -16,7 +16,7 @@ LinkPlugin = window.EditoreLinkPlugin;
 LinkPlugin = require('editore-link-plugin');
 
 // then register!
-editor.registerEditionPlugin(LinkPlugin);
+editore.registerEditionPlugin(LinkPlugin);
 ```
 ---
 #### support
